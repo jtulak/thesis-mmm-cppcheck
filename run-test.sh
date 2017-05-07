@@ -50,8 +50,8 @@ if [ $INTERACTIVE -eq 0 ]; then
 	if [ $CLEAN -eq 1 ]; then
 		echo "Clean is not necessary for cppcheck, skipping..."
 	fi
-	echo "cppcheck --enable=all mkfs/"
-	cppcheck --enable=all mkfs/
+	echo "cppcheck --enable=all ."
+	cppcheck --enable=all .
 else
 	exec /bin/bash
 fi
